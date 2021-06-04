@@ -1,0 +1,15 @@
+
+<form [formGroup]='myform' class="row g-3" (ngSubmit)='submit(myform)'>
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control {{myform.controls.email.errors!==null?'error':''}}" id="inputEmail4" formControlName="email">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control {{myform.controls.password.errors!==null?'error':''}}" id="inputPassword4" formControlName="password">
+    </div>
+    
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" [disabled]='myform.invalid'>Sign in</button>
+    </div>
+  </form>
