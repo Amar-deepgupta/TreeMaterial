@@ -1,0 +1,37 @@
+<mat-tab-group mat-align-tabs="start" >
+    <mat-tab >
+        <ng-template mat-tab-label>
+            <span (click)="onClick(1)" >process1</span>
+        </ng-template>
+       <button class=" btn btn-primary pd-3"  (click)="  processed(i)" *ngFor="let obj of comp; let i=index">Button{{i+1}}</button>
+    </mat-tab>
+    <mat-tab >
+        <ng-template mat-tab-label>
+            <span (click)="onClick(2)" >process2</span>
+        </ng-template>
+       <button class=" btn btn-primary pd-3"  (click)="  processed(i)" *ngFor="let obj of comp; let i=index">Button{{i+1}}</button>
+    </mat-tab>
+    <mat-tab >
+        <ng-template mat-tab-label>
+            <span (click)="onClick(3)" >process3</span>
+        </ng-template>
+       <button class=" btn btn-primary pd-3"  (click)="  processed(i)" *ngFor="let obj of comp; let i=index">Button{{i+1}}</button>
+    </mat-tab>
+    <mat-tab >
+        <ng-template mat-tab-label>
+            <span (click)="onClick(4)" >process4</span>
+        </ng-template>
+       <button class=" btn btn-primary pd-3"  (click)="  processed(i)" *ngFor="let obj of comp; let i=index">Button{{i+1}}</button>
+    </mat-tab>
+    <mat-tab >
+        <ng-template mat-tab-label>
+            <span (click)="onClick(5)" >process5</span>
+        </ng-template>
+       <button class=" btn btn-primary pd-3"  (click)="  processed(i)" *ngFor="let obj of comp; let i=index">Button{{i+1}}</button>
+    </mat-tab>
+   
+   
+</mat-tab-group>
+<div><template #loadComponent>
+</template>
+</div>

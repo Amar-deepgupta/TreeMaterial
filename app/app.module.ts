@@ -9,7 +9,18 @@ import { TreeComponent } from './tree/tree.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatIconModule } from '@angular/material/icon';
+import {  MatTabsModule} from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
+import { AdBannerComponent } from './adbanner/ad-banner.componen';
+import { HeroJobAdComponent } from './adbanner/hero-job-ad.component';
+import { HeroProfileComponent } from './adbanner/hero-profile.component';
+import { AdService } from './adbanner/ad.service';
+import { TabProcessComponent } from './tab-process/tab-process.component';
+import { Component1Component } from './component1/component1.component';
+import { Component2Component } from './component2/component2.component';
+import { Component3Component } from './component3/component3.component';
+import { Component4Component } from './component4/component4.component';
+import { Component5Component } from './component5/component5.component';
 
 
 
@@ -17,8 +28,20 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     FormComponent,
-    TreeComponent
+    TreeComponent,
+    AdBannerComponent,
+    HeroJobAdComponent,
+    HeroProfileComponent,
+    TabProcessComponent,
+    Component1Component,
+  
+    Component2Component,
+    Component3Component,
+    Component4Component,
+    Component5Component,
+    
   ],
+ 
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,10 +49,12 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatTreeModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTabsModule
       // NgxContextModule
   ],
-  providers: [],
+  providers: [AdService],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
