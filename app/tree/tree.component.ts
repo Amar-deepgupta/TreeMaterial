@@ -16,7 +16,7 @@ interface Data {
   
   name: string;
    id: string;
-  // type: string;
+   type: string;
   level: number;
 }
 // const TREE_DATA="A string"
